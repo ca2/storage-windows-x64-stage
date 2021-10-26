@@ -1,0 +1,14 @@
+prefix=/c/archive/nodetime-windows/x64/stage
+exec_prefix=${prefix}
+libdir=/c/archive/nodetime-windows/x64/stage/lib
+includedir=/c/archive/nodetime-windows/x64/stage/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.3.100
+Requires: 
+Requires.private: libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}
