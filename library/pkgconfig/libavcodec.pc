@@ -1,14 +1,14 @@
-prefix=/c/archive/nodetime-windows/x64/stage
+prefix=/x/third/output/ffmpeg-x64-stage
 exec_prefix=${prefix}
-libdir=/c/archive/nodetime-windows/x64/stage/lib
-includedir=/c/archive/nodetime-windows/x64/stage/include
+libdir=/x/third/output/ffmpeg-x64-stage/lib
+includedir=/x/third/output/ffmpeg-x64-stage/include
 
 Name: libavcodec
 Description: FFmpeg codec library
-Version: 58.35.100
+Version: 59.12.100
 Requires: 
-Requires.private: libswresample >= 3.3.100, libavutil >= 56.22.100
+Requires.private: libswresample >= 4.0.100, libavutil >= 57.8.100
 Conflicts:
 Libs: -L${libdir}  -lavcodec 
-Libs.private: ole32.lib user32.lib
+Libs.private: mfplat.lib mfuuid.lib ole32.lib strmiids.lib ole32.lib user32.lib
 Cflags: -I${includedir}

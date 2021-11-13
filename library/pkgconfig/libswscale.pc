@@ -1,13 +1,13 @@
-prefix=/c/archive/nodetime-windows/x64/stage
+prefix=/x/third/output/ffmpeg-x64-stage
 exec_prefix=${prefix}
-libdir=/c/archive/nodetime-windows/x64/stage/lib
-includedir=/c/archive/nodetime-windows/x64/stage/include
+libdir=/x/third/output/ffmpeg-x64-stage/lib
+includedir=/x/third/output/ffmpeg-x64-stage/include
 
 Name: libswscale
 Description: FFmpeg image rescaling library
-Version: 5.3.100
+Version: 6.1.100
 Requires: 
-Requires.private: libavutil >= 56.22.100
+Requires.private: libavutil >= 57.8.100
 Conflicts:
 Libs: -L${libdir}  -lswscale 
 Libs.private: 

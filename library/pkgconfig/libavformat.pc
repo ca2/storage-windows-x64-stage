@@ -1,13 +1,13 @@
-prefix=/c/archive/nodetime-windows/x64/stage
+prefix=/x/third/output/ffmpeg-x64-stage
 exec_prefix=${prefix}
-libdir=/c/archive/nodetime-windows/x64/stage/lib
-includedir=/c/archive/nodetime-windows/x64/stage/include
+libdir=/x/third/output/ffmpeg-x64-stage/lib
+includedir=/x/third/output/ffmpeg-x64-stage/include
 
 Name: libavformat
 Description: FFmpeg container format library
-Version: 58.20.100
+Version: 59.8.100
 Requires: 
-Requires.private: libavcodec >= 58.35.100, libswresample >= 3.3.100, libavutil >= 56.22.100
+Requires.private: libavcodec >= 59.12.100, libswresample >= 4.0.100, libavutil >= 57.8.100
 Conflicts:
 Libs: -L${libdir}  -lavformat 
 Libs.private: secur32.lib ws2_32.lib
